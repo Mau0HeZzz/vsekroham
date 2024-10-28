@@ -1,0 +1,38 @@
+@use "sass:math"; 
+@use "base/mixins";
+@use "variables";
+
+.header {
+  display: grid;
+  grid-template-columns: mixins.toRem(60) auto mixins.toRem(60);
+  align-items: center;
+  gap: mixins.toRem(15);
+  padding-top: mixins.toRem(6);
+  &:not(:last-child) {margin-bottom: mixins.toRem(10);}
+
+  &__close {
+    color: variables.$blue;
+    font-size: mixins.toRem(17);
+    line-height: math.div(22 , 17);
+    padding: mixins.toRem(8) mixins.toRem(11);
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__maintitle {
+    font-weight: 600;
+    font-size: mixins.toRem(17);
+    line-height: math.div(22 , 17);
+    color:variables.$mainColor;
+  }
+
+  &__subtitle {
+    font-size: mixins.toRem(13);
+    line-height: math.div(20 , 13);
+    color: variables.$pink;
+  }
+}

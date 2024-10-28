@@ -1,7 +1,9 @@
 <template>
-  <Header />
-  <slot></slot>
-  <Footer />
+  <div class="wrapper">
+    <Header />
+    <slot></slot>
+    <Footer />
+  </div>
 </template>
 
 <script setup>

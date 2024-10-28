@@ -41,6 +41,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+  color: #fff;
+  max-width: mixins.toRem(500);
+  margin: 0 auto;
+  background-color: variables.$bg;
+  height: 100dvh;
 	@supports (overflow: clip) {
 		overflow: clip;
 	}

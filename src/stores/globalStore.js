@@ -6,8 +6,9 @@ const {
 
 export const useGlobalStore = defineStore('globalStore',{
   state: () => ({
+    tg: window.Telegram.WebApp,
     colorScheme,
     isLoading: true,
-    
+
   }),
 })

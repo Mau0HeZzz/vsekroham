@@ -1,0 +1,72 @@
+@use "base/mixins";
+
+@use "variables";
+
+// Заголовки, общие БЄМ блоки и прочее...
+// Заголовки, общие БЄМ блоки и прочее...
+// Заголовки, общие БЄМ блоки и проче...
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+._md1dn {
+  @media (max-width:mixins.toEm(variables.$pc)){
+    display: none !important;
+  }
+}
+
+._mmd1dn {
+  @media (min-width:mixins.toEm(variables.$pc)){
+    display: none !important;
+  }
+}
+
+._md2dn {
+  @media (max-width:mixins.toEm(variables.$tablet)){
+    display: none !important;
+  }
+}
+
+._mmd2dn {
+  @media (min-width:mixins.toEm(variables.$tablet)){
+    display: none !important;
+  }
+}
+
+._md3dn {
+  @media (max-width:mixins.toEm(variables.$mobile)){
+    display: none !important;
+  }
+}
+
+._mmd3dn {
+  @media (min-width:mixins.toEm(variables.$mobile)){
+    display: none !important;
+  }
+}
+
+._md4dn {
+  @media (max-width:mixins.toEm(variables.$mobileSmall)){
+    display: none !important;
+  }
+}
+
+._mmd4dn {
+  @media (min-width:mixins.toEm(variables.$mobileSmall)){
+    display: none !important;
+  }
+}
+
+._pen {
+  pointer-events: none;
+}
+
+.page {
+  padding-top: var(--headerHeight);
+}
